@@ -1,1 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustentabilidade no Agronegócio</title>
 
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background-color: #f4f9f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header{
+      background: linear-gradient(90deg, #2e7d32, #66bb6a);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1{
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    nav{
+      background-color: #1b5e20;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a{
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover{
+      color: #c8e6c9;
+    }
+
+    section{
+      padding: 50px 10%;
+    }
+
+    h2{
+      color: #2e7d32;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      border-left: 6px solid #66bb6a;
+      padding-left: 10px;
+    }
+
+    .card-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .card{
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover{
+      transform: translateY(-5px);
+    }
+
+    .card h3{
+      color: #388e3c;
+      margin-bottom: 10px;
+    }
+
+    ul{
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .banner{
+      background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .banner h2{
+      background-color: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 10px;
+      border: none;
+      color: white;
+    }
+
+    .dados{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .dado{
+      background-color: #e8f5e9;
+      padding: 20px;
+      border-radius: 15px;
+      width: 250px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .dado h3{
+      color: #1b5e20;
+      font-size: 2rem;
+    }
+
+    footer{
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 768px){
+      header h1{
+        font-size: 2rem;
+      }
+
+      section{
+        padding: 30px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Sustentabilidade no Agronegócio</h1>
+    <p>Produção agrícola, tecnologia e preservação ambiental caminhando juntas.</p>
+  </header>
+
+  <nav>
+    <a href="#importancia">Importância</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+    <a href="#tecnologias">Tecnologias</a>
+    <a href="#impactos">Impactos</a>
+    <a href="#solucoes">Soluções</a>
+    <a href="#dados">Curiosidades</a>
+  </nav>
+
+  <div class="banner">
+    <h2>O futuro do agronegócio depende do equilíbrio entre produtividade e meio ambiente.</h2>
+  </div>
+
+  <section id="importancia">
+    <h2>Importância do Agronegócio para a Economia</h2>
+
+    <p>
+      O agronegócio é um dos setores mais importantes da economia brasileira e mundial.
+      Ele é responsável pela produção de alimentos, geração de empregos e fortalecimento das exportações.
+    </p>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>Produção de Alimentos</h3>
+        <p>O setor abastece a população com alimentos essenciais para o dia a dia.</p>
+      </div>
+
+      <div class="card">
+        <h3>Geração de Empregos</h3>
+        <p>Milhões de pessoas trabalham direta ou indiretamente no campo.</p>
+      </div>
+
+      <div class="card">
+        <h3>Participação no PIB</h3>
+        <p>O agronegócio possui grande impacto na economia brasileira.</p>
+      </div>
+
+      <div class="card">
+        <h3>Exportações</h3>
+        <p>Produtos agrícolas brasileiros são exportados para diversos países.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="sustentabilidade">
+    <h2>Sustentabilidade no Campo</h2>
+
+    <p>
+      A sustentabilidade busca equilibrar produção agrícola, preservação ambiental,
+      desenvolvimento econômico e qualidade de vida.
+    </p>
+
+    <ul>
+      <li>Produzir mais sem destruir o meio ambiente;</li>
+      <li>Reduzir desperdícios;</li>
+      <li>Preservar recursos naturais;</li>
+      <li>Garantir produção para as futuras gerações.</li>
+    </ul>
+  </section>
+
+  <section id="tecnologias">
+    <h2>Tecnologias Sustentáveis no Agronegócio</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>Agricultura de Precisão</h3>
+        <p>
+          Utiliza GPS, sensores, inteligência artificial e satélites para monitorar plantações.
+        </p>
+
+        <ul>
+          <li>Redução de desperdícios;</li>
+          <li>Maior produtividade;</li>
+          <li>Menor impacto ambiental.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Irrigação Inteligente</h3>
+        <p>
+          Sistemas automatizados controlam a quantidade ideal de água nas plantações.
+        </p>
+
+        <ul>
+          <li>Economia de água;</li>
+          <li>Maior eficiência agrícola;</li>
+          <li>Melhor desenvolvimento das plantas.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Drones Agrícolas</h3>
+        <p>
+          Os drones ajudam no monitoramento das lavouras e na identificação de problemas.
+        </p>
+
+        <ul>
+          <li>Mapeamento de plantações;</li>
+          <li>Detecção de pragas;</li>
+          <li>Redução de custos.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Energia Renovável</h3>
+        <p>
+          O uso de energia solar, eólica e biomassa reduz a poluição e os custos.
+        </p>
+
+        <ul>
+          <li>Redução da emissão de carbono;</li>
+          <li>Produção sustentável;</li>
+          <li>Menor dependência de combustíveis fósseis.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="impactos">
+    <h2>Impactos Ambientais do Agronegócio</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>Desmatamento</h3>
+        <p>
+          A expansão agrícola pode causar perda da vegetação natural,
+          afetando a biodiversidade e o clima.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Uso da Água</h3>
+        <p>
+          O uso excessivo de água pode gerar desperdícios,
+          contaminação de rios e escassez hídrica.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Emissão de Carbono</h3>
+        <p>
+          Máquinas e queimadas aumentam a emissão de gases do efeito estufa,
+          contribuindo para o aquecimento global.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="solucoes">
+    <h2>Soluções Sustentáveis</h2>
+
+    <p>
+      Existem práticas capazes de unir produtividade agrícola e preservação ambiental.
+    </p>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>Reflorestamento</h3>
+        <p>Ajuda na recuperação de áreas degradadas e preservação ambiental.</p>
+      </div>
+
+      <div class="card">
+        <h3>Uso Consciente da Água</h3>
+        <p>Evita desperdícios e protege os recursos hídricos.</p>
+      </div>
+
+      <div class="card">
+        <h3>Rotação de Culturas</h3>
+        <p>Melhora a fertilidade do solo e reduz pragas naturalmente.</p>
+      </div>
+
+      <div class="card">
+        <h3>Tecnologias Inteligentes</h3>
+        <p>Ferramentas digitais ajudam a produzir mais com menos impacto ambiental.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="dados">
+    <h2>Curiosidades e Dados</h2>
+
+    <div class="dados">
+
+      <div class="dado">
+        <h3>25%</h3>
+        <p>Participação aproximada do agronegócio no PIB brasileiro.</p>
+      </div>
+
+      <div class="dado">
+        <h3>70%</h3>
+        <p>Da água doce é utilizada pela agricultura mundial.</p>
+      </div>
+
+      <div class="dado">
+        <h3>+1 Bilhão</h3>
+        <p>De pessoas dependem diretamente do agronegócio no mundo.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Conclusão</h2>
+
+    <p>
+      O agronegócio é essencial para a economia e para a produção de alimentos.
+      Porém, seu crescimento precisa acontecer de maneira sustentável.
+      A tecnologia pode ajudar a aumentar a produtividade, reduzir impactos ambientais
+      e garantir um futuro equilibrado entre economia e preservação da natureza.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 - Site Educativo sobre Sustentabilidade no Agronegócio</p>
+  </footer>
+
+</body>
+    </html>
