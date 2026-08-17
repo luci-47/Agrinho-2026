@@ -1,387 +1,454 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sustentabilidade no Agronegócio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <title>Agro Forte | Futuro Sustentável</title>
 
-    body{
-      background-color: #f4f9f4;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header{
-      background: linear-gradient(90deg, #2e7d32, #66bb6a);
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    header h1{
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-    }
-
-    nav{
-      background-color: #1b5e20;
-      padding: 15px;
-      text-align: center;
-    }
-
-    nav a{
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover{
-      color: #c8e6c9;
-    }
-
-    section{
-      padding: 50px 10%;
-    }
-
-    h2{
-      color: #2e7d32;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      border-left: 6px solid #66bb6a;
-      padding-left: 10px;
-    }
-
-    .card-container{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 25px;
-    }
-
-    .card{
-      background-color: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-
-    .card:hover{
-      transform: translateY(-5px);
-    }
-
-    .card h3{
-      color: #388e3c;
-      margin-bottom: 10px;
-    }
-
-    ul{
-      margin-left: 20px;
-      margin-top: 10px;
-    }
-
-    .banner{
-      background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
-      background-size: cover;
-      background-position: center;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-
-    .banner h2{
-      background-color: rgba(0,0,0,0.6);
-      padding: 20px;
-      border-radius: 10px;
-      border: none;
-      color: white;
-    }
-
-    .dados{
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-
-    .dado{
-      background-color: #e8f5e9;
-      padding: 20px;
-      border-radius: 15px;
-      width: 250px;
-      margin: 10px;
-      text-align: center;
-    }
-
-    .dado h3{
-      color: #1b5e20;
-      font-size: 2rem;
-    }
-
-    footer{
-      background-color: #1b5e20;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    @media(max-width: 768px){
-      header h1{
-        font-size: 2rem;
-      }
-
-      section{
-        padding: 30px 5%;
-      }
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>Sustentabilidade no Agronegócio</h1>
-    <p>Produção agrícola, tecnologia e preservação ambiental caminhando juntas.</p>
-  </header>
+    <header class="cabecalho">
 
-  <nav>
-    <a href="#importancia">Importância</a>
-    <a href="#sustentabilidade">Sustentabilidade</a>
-    <a href="#tecnologias">Tecnologias</a>
-    <a href="#impactos">Impactos</a>
-    <a href="#solucoes">Soluções</a>
-    <a href="#dados">Curiosidades</a>
-  </nav>
+        <div class="logo">
+            <span>🌱</span>
+            <h1>Agro Forte</h1>
+        </div>
 
-  <div class="banner">
-    <h2>O futuro do agronegócio depende do equilíbrio entre produtividade e meio ambiente.</h2>
-  </div>
+        <button class="menu-botao" id="menuBotao">
+            ☰
+        </button>
 
-  <section id="importancia">
-    <h2>Importância do Agronegócio para a Economia</h2>
+        <nav id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#tecnologia">Tecnologia</a>
+            <a href="#sustentabilidade">Sustentabilidade</a>
+            <a href="#desafios">Desafios</a>
+            <a href="#futuro">Futuro</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
 
-    <p>
-      O agronegócio é um dos setores mais importantes da economia brasileira e mundial.
-      Ele é responsável pela produção de alimentos, geração de empregos e fortalecimento das exportações.
-    </p>
+    </header>
 
-    <div class="card-container">
 
-      <div class="card">
-        <h3>Produção de Alimentos</h3>
-        <p>O setor abastece a população com alimentos essenciais para o dia a dia.</p>
-      </div>
+    <main>
 
-      <div class="card">
-        <h3>Geração de Empregos</h3>
-        <p>Milhões de pessoas trabalham direta ou indiretamente no campo.</p>
-      </div>
+        <!-- INÍCIO -->
 
-      <div class="card">
-        <h3>Participação no PIB</h3>
-        <p>O agronegócio possui grande impacto na economia brasileira.</p>
-      </div>
+        <section id="inicio" class="hero">
 
-      <div class="card">
-        <h3>Exportações</h3>
-        <p>Produtos agrícolas brasileiros são exportados para diversos países.</p>
-      </div>
+            <div class="hero-texto">
 
-    </div>
-  </section>
+                <span class="tag">AGRINHO 2026</span>
 
-  <section id="sustentabilidade">
-    <h2>Sustentabilidade no Campo</h2>
+                <h2>
+                    Produzir mais.
+                    <strong>Preservar sempre.</strong>
+                </h2>
 
-    <p>
-      A sustentabilidade busca equilibrar produção agrícola, preservação ambiental,
-      desenvolvimento econômico e qualidade de vida.
-    </p>
+                <p>
+                    Descubra como a tecnologia e a sustentabilidade
+                    podem transformar o agronegócio e ajudar a construir
+                    um futuro melhor.
+                </p>
 
-    <ul>
-      <li>Produzir mais sem destruir o meio ambiente;</li>
-      <li>Reduzir desperdícios;</li>
-      <li>Preservar recursos naturais;</li>
-      <li>Garantir produção para as futuras gerações.</li>
-    </ul>
-  </section>
+                <a href="#tecnologia" class="botao">
+                    Conheça as soluções
+                </a>
 
-  <section id="tecnologias">
-    <h2>Tecnologias Sustentáveis no Agronegócio</h2>
+            </div>
 
-    <div class="card-container">
+            <div class="hero-imagem">
+                <img src="assets/agro-tecnologia.jpg"
+                     alt="Tecnologia aplicada à agricultura">
+            </div>
 
-      <div class="card">
-        <h3>Agricultura de Precisão</h3>
+        </section>
+
+
+        <!-- INTRODUÇÃO -->
+
+        <section class="introducao">
+
+            <span class="tag">POR QUE ISSO IMPORTA?</span>
+
+            <h2>
+                O campo está mudando
+            </h2>
+
+            <p>
+                O agronegócio é fundamental para a economia e para a
+                produção de alimentos. Porém, seu crescimento precisa
+                acontecer de maneira responsável, utilizando os recursos
+                naturais de forma consciente.
+            </p>
+
+            <p>
+                Com novas tecnologias e práticas sustentáveis, é possível
+                aumentar a produtividade enquanto reduzimos os impactos
+                ambientais.
+            </p>
+
+        </section>
+
+
+        <!-- TECNOLOGIA -->
+
+        <section id="tecnologia" class="secao">
+
+            <div class="titulo-secao">
+
+                <span class="tag">INOVAÇÃO</span>
+
+                <h2>
+                    Tecnologia no campo
+                </h2>
+
+                <p>
+                    Soluções inteligentes ajudam o produtor a economizar
+                    recursos e aumentar a eficiência.
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <div class="icone">🚁</div>
+
+                    <h3>Drones agrícolas</h3>
+
+                    <p>
+                        Auxiliam no monitoramento das plantações,
+                        identificando problemas e áreas que precisam
+                        de atenção.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="icone">💧</div>
+
+                    <h3>Irrigação inteligente</h3>
+
+                    <p>
+                        Sistemas inteligentes ajudam a utilizar somente
+                        a quantidade de água necessária para as plantações.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="icone">📡</div>
+
+                    <h3>Agricultura de precisão</h3>
+
+                    <p>
+                        Sensores, GPS e dados permitem tomar decisões
+                        mais precisas durante a produção.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="icone">☀️</div>
+
+                    <h3>Energia renovável</h3>
+
+                    <p>
+                        A energia solar e outras fontes renováveis podem
+                        reduzir o impacto ambiental das propriedades rurais.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUSTENTABILIDADE -->
+
+        <section id="sustentabilidade" class="sustentabilidade">
+
+            <div class="sustentabilidade-imagem">
+
+                <img src="assets/energia-sustentavel.jpg"
+                     alt="Energia solar em propriedade rural">
+
+            </div>
+
+
+            <div class="sustentabilidade-texto">
+
+                <span class="tag">SUSTENTABILIDADE</span>
+
+                <h2>
+                    Cuidar da terra também é produzir.
+                </h2>
+
+                <p>
+                    A agricultura sustentável busca manter a produtividade
+                    sem comprometer os recursos naturais.
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        <span>✓</span>
+                        Conservação do solo
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        Uso consciente da água
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        Preservação da biodiversidade
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        Redução de desperdícios
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        Uso de energias limpas
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESAFIOS -->
+
+        <section id="desafios" class="secao desafios">
+
+            <div class="titulo-secao">
+
+                <span class="tag">ATENÇÃO</span>
+
+                <h2>
+                    Quais são os desafios?
+                </h2>
+
+                <p>
+                    O desenvolvimento agrícola precisa considerar
+                    os impactos causados ao meio ambiente.
+                </p>
+
+            </div>
+
+
+            <div class="desafios-grid">
+
+                <div class="desafio">
+
+                    <span>🌳</span>
+
+                    <h3>Desmatamento</h3>
+
+                    <p>
+                        A perda de vegetação pode prejudicar a biodiversidade
+                        e os ecossistemas.
+                    </p>
+
+                </div>
+
+
+                <div class="desafio">
+
+                    <span>💦</span>
+
+                    <h3>Uso da água</h3>
+
+                    <p>
+                        O desperdício de água pode comprometer os recursos
+                        hídricos disponíveis.
+                    </p>
+
+                </div>
+
+
+                <div class="desafio">
+
+                    <span>🌎</span>
+
+                    <h3>Emissão de carbono</h3>
+
+                    <p>
+                        Algumas atividades agrícolas contribuem para a
+                        emissão de gases do efeito estufa.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FUTURO -->
+
+        <section id="futuro" class="futuro">
+
+            <div>
+
+                <span class="tag">OLHANDO PARA FRENTE</span>
+
+                <h2>
+                    O futuro do agro é sustentável.
+                </h2>
+
+                <p>
+                    Agricultura regenerativa, inteligência artificial,
+                    sensores, energia limpa e novas técnicas de cultivo
+                    podem ajudar a construir uma produção mais eficiente
+                    e responsável.
+                </p>
+
+                <button class="botao" id="botaoFuturo">
+                    Descubra uma ideia
+                </button>
+
+                <p id="mensagemFuturo" class="mensagem-futuro"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUIZ -->
+
+        <section id="quiz" class="quiz">
+
+            <span class="tag">TESTE SEUS CONHECIMENTOS</span>
+
+            <h2>
+                Quiz da sustentabilidade 🌱
+            </h2>
+
+            <p>
+                Qual dessas atitudes ajuda a tornar a agricultura
+                mais sustentável?
+            </p>
+
+
+            <div class="opcoes">
+
+                <button class="opcao" data-correta="false">
+                    Aumentar o desperdício de água
+                </button>
+
+                <button class="opcao" data-correta="true">
+                    Utilizar irrigação inteligente
+                </button>
+
+                <button class="opcao" data-correta="false">
+                    Retirar toda a vegetação das propriedades
+                </button>
+
+                <button class="opcao" data-correta="false">
+                    Aumentar o desperdício de recursos
+                </button>
+
+            </div>
+
+            <p id="resultadoQuiz"></p>
+
+        </section>
+
+
+        <!-- CONTATO -->
+
+        <section class="contato">
+
+            <div>
+
+                <span class="tag">PARTICIPE</span>
+
+                <h2>
+                    Quer deixar uma mensagem?
+                </h2>
+
+                <p>
+                    Compartilhe sua opinião sobre sustentabilidade
+                    e o futuro do agronegócio.
+                </p>
+
+            </div>
+
+
+            <form id="formulario">
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Seu nome"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Seu e-mail"
+                    required
+                >
+
+                <textarea
+                    id="mensagem"
+                    placeholder="Sua mensagem"
+                    required
+                ></textarea>
+
+                <button type="submit" class="botao">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="logo">
+            <span>🌱</span>
+            <h2>Agro Forte</h2>
+        </div>
+
         <p>
-          Utiliza GPS, sensores, inteligência artificial e satélites para monitorar plantações.
+            Agro forte, futuro sustentável.
         </p>
 
-        <ul>
-          <li>Redução de desperdícios;</li>
-          <li>Maior produtividade;</li>
-          <li>Menor impacto ambiental.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Irrigação Inteligente</h3>
         <p>
-          Sistemas automatizados controlam a quantidade ideal de água nas plantações.
+            Projeto Agrinho 2026
         </p>
 
-        <ul>
-          <li>Economia de água;</li>
-          <li>Maior eficiência agrícola;</li>
-          <li>Melhor desenvolvimento das plantas.</li>
-        </ul>
-      </div>
+    </footer>
 
-      <div class="card">
-        <h3>Drones Agrícolas</h3>
-        <p>
-          Os drones ajudam no monitoramento das lavouras e na identificação de problemas.
-        </p>
 
-        <ul>
-          <li>Mapeamento de plantações;</li>
-          <li>Detecção de pragas;</li>
-          <li>Redução de custos.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Energia Renovável</h3>
-        <p>
-          O uso de energia solar, eólica e biomassa reduz a poluição e os custos.
-        </p>
-
-        <ul>
-          <li>Redução da emissão de carbono;</li>
-          <li>Produção sustentável;</li>
-          <li>Menor dependência de combustíveis fósseis.</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="impactos">
-    <h2>Impactos Ambientais do Agronegócio</h2>
-
-    <div class="card-container">
-
-      <div class="card">
-        <h3>Desmatamento</h3>
-        <p>
-          A expansão agrícola pode causar perda da vegetação natural,
-          afetando a biodiversidade e o clima.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Uso da Água</h3>
-        <p>
-          O uso excessivo de água pode gerar desperdícios,
-          contaminação de rios e escassez hídrica.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Emissão de Carbono</h3>
-        <p>
-          Máquinas e queimadas aumentam a emissão de gases do efeito estufa,
-          contribuindo para o aquecimento global.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="solucoes">
-    <h2>Soluções Sustentáveis</h2>
-
-    <p>
-      Existem práticas capazes de unir produtividade agrícola e preservação ambiental.
-    </p>
-
-    <div class="card-container">
-
-      <div class="card">
-        <h3>Reflorestamento</h3>
-        <p>Ajuda na recuperação de áreas degradadas e preservação ambiental.</p>
-      </div>
-
-      <div class="card">
-        <h3>Uso Consciente da Água</h3>
-        <p>Evita desperdícios e protege os recursos hídricos.</p>
-      </div>
-
-      <div class="card">
-        <h3>Rotação de Culturas</h3>
-        <p>Melhora a fertilidade do solo e reduz pragas naturalmente.</p>
-      </div>
-
-      <div class="card">
-        <h3>Tecnologias Inteligentes</h3>
-        <p>Ferramentas digitais ajudam a produzir mais com menos impacto ambiental.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="dados">
-    <h2>Curiosidades e Dados</h2>
-
-    <div class="dados">
-
-      <div class="dado">
-        <h3>25%</h3>
-        <p>Participação aproximada do agronegócio no PIB brasileiro.</p>
-      </div>
-
-      <div class="dado">
-        <h3>70%</h3>
-        <p>Da água doce é utilizada pela agricultura mundial.</p>
-      </div>
-
-      <div class="dado">
-        <h3>+1 Bilhão</h3>
-        <p>De pessoas dependem diretamente do agronegócio no mundo.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section>
-    <h2>Conclusão</h2>
-
-    <p>
-      O agronegócio é essencial para a economia e para a produção de alimentos.
-      Porém, seu crescimento precisa acontecer de maneira sustentável.
-      A tecnologia pode ajudar a aumentar a produtividade, reduzir impactos ambientais
-      e garantir um futuro equilibrado entre economia e preservação da natureza.
-    </p>
-  </section>
-
-  <footer>
-    <p>© 2026 - Site Educativo sobre Sustentabilidade no Agronegócio</p>
-  </footer>
+    <script src="script.js"></script>
 
 </body>
-  <script src="script.js"></script>
-    </html>
+                                                     </html>
